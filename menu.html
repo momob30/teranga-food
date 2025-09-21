@@ -1,0 +1,136 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teranga food </title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+      <!-- Navbar -->
+      <header>
+        <nav class="navbar">
+            <a href="#logo" class="logo">
+                <img src="images/TF4.png" alt="logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="dessert.html">Dessert</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br><br><br><br><br><br><br>
+        <section class="menu" id="Menu">
+    <h1 class="titre-menu">Notre Menu</h1>
+    <div class="menu-container">
+        <!-- Carte thiebou dieune blanc -->
+
+        <div class="plat">
+            <img src="Les plats/TDB2.jpeg" alt="Thiebou dieune blanc">
+            <h3>Thieboudieune blanc</h3>
+            <button class="commander-btn" onclick="ouvrirFormulaire('Thieboudieune blanc')">Commander</button>
+        </div>
+
+        <!-- Carte thiebou dieune rouge -->
+
+        <div class="plat">
+            <img src="Les plats/TDR2.jpeg" alt="Thiebou dieune rouge">
+            <h3>Thieboudienne rouge</h3>
+            <button class="commander-btn" onclick="ouvrirFormulaire('Thieboudienne rouge')">Commander</button>
+        </div>
+        
+        <!-- Carte Mbakhalou Saloum -->
+         <div class="plat">
+            <img src="Les plats/MS2.jpeg" alt="Mbakhalou Saloum">
+            <h3>Mbakhalou Saloum</h3>
+            <button class="commander-btn" onclick="ouvrirFormulaire('Mbakhalou Saloum')">Commander</button>
+        </div>
+        
+        <!-- carte thiebou guinar -->
+         <div class="plat">
+            <img src="Les plats/TG2.jpeg" alt="Thiebou guinar">
+            <h3>Thiebou guinar</h3>
+            <button class="commander-btn" onclick="ouvrirFormulaire('Thiebou guinar')">Commander</button>
+        </div>
+
+        <!-- carte thiebou yapp -->
+
+         <div class="plat">
+            <img src="Les plats/TY2.jpeg" alt="Thieebou yapp">
+            <h3>Thiebou yapp</h3>
+            <button class="commander-btn" onclick="ouvrirFormulaire('Thiebou yapp')">Commander</button>
+        </div>
+
+        <!-- carte yassa guinar -->
+
+         <div class="plat">
+            <img src="Les plats/YG2.jpeg" alt="Yassa guinar">
+            <h3>Yassa guinar</h3>
+            <button class="commander-btn" onclick="ouvrirFormulaire('Yassa guinar')">Commander</button>
+        </div>
+
+        <!-- Carte Mafe -->
+
+        <div class="plat">
+            <img src="Les plats/Mafe.jpeg" alt="Mafe">
+            <h3>Mafe</h3>
+            <button class="commander-btn" onclick="ouvrirFormulaire('Mafe')">Commander</button>
+        </div>
+
+        <!-- Carte Paella -->
+
+        <div class="plat">
+            <img src="Les plats/P.jpeg" alt="Paella">
+            <h3>Paella</h3>
+            <button class="commander-btn" onclick="ouvrirFormulaire('Paella')">Commander</button>
+        </div>
+
+        <!-- Carte Soup kandia -->
+
+        <div class="plat">
+            <img src="Les plats/SK.jpeg" alt="Soup Kandia">
+            <h3>Soup kandia</h3>
+            <button class="commander-btn" onclick="ouvrirFormulaire('Soup Kandia')">Commander</button>
+        </div>
+
+        <!-- Carte Thiou  -->
+
+        <div class="plat">
+            <img src="Les plats/Thiou.jpeg" alt="Thiou">
+            <h3>Thiou</h3>
+            <button class="commander-btn" onclick="ouvrirFormulaire('Thiou')">Commander</button>
+        </div>
+
+        
+    </div>
+</section>
+
+<!-- Formulaire de commande -->
+<div id="formulaireModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="fermerFormulaire()">&times;</span>
+        <h3>Commander : <span id="nomPlat"></span></h3>
+        <form id="commandeForm">
+            <label>Prenom  :</label>
+            <input type="text" name="nom" required>
+            <label>Nom :</label>
+            <input type="text" name="nom" required>
+            <label> Numero de telephone :</label>
+            <input type="text" name="nom" required>
+            <label>Adresse :</label>
+            <input type="text" name="adresse" required>
+            <label>Quantité :</label>
+            <input type="number" name="quantite" min="1" value="1" required>
+            <button type="submit">Valider</button>
+        </form>
+    </div>
+</div>
+      <script src="script.js"></script>
+    </section>
+
+</div>
+
+</body>
+</html>
