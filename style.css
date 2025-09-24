@@ -274,6 +274,7 @@ body {
   animation: float 4s ease-in-out infinite;
   transition: var(--transition);
   filter: drop-shadow(0 8px 16px rgba(0,0,0,0.2));
+  border-color: #f39c12;
 }
 
 .image-accueil:hover {
