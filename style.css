@@ -1,4 +1,5 @@
 
+
 /* ===== VARIABLES ET RESET ===== */
 :root {
   --primary: #e67e22;
@@ -427,6 +428,12 @@ a:focus, button:focus {
   100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 /* ===== ESPACE MENU ===== */
+.menu-title{
+  color: orange;
+  text-align: center;
+  font-weight: bold;
+ 
+}
 .menu-container {
     display: flex;
     flex-wrap: wrap;
@@ -467,14 +474,15 @@ button.commander-btn:hover {
 
 /* Modal */
 .modal {
-    display: none; /* caché par défaut */
+    display: none; 
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
     background-color: rgba(0,0,0,0.7);
     justify-content: center;
     align-items: center;
-}
+    z-index: 2000;
+  }
 
 .modal-content {
     background-color: #fff;
@@ -496,11 +504,6 @@ button.commander-btn:hover {
     font-size: 20px;
     font-weight: bold;
 }
-.titre-menu{
-  color: orange;
-  text-align: center;
-  font-weight: bold;
-}
 .about{
     display: flex;
     flex-direction: column;
@@ -516,13 +519,8 @@ button.commander-btn:hover {
   color: #2c3434;
   font-weight: bold;
 }
-#h1{
-  color: orange;
-  font-weight: bold;
-}
 
 /* ===== ESPACE RESEAUX SOCIAUX ===== */
-
 .contact-section {
   display: flex;
   justify-content: center;
@@ -571,8 +569,10 @@ button.commander-btn:hover {
   margin: 0 8px;
   font-weight: bold;
 }
-
-
 #footer-title{
     text-align: center;
+    font-weight: bold;
+    color: orange;
 }
+/*===== FIN DU CSS =====*/
+
